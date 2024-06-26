@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+      <div class="logo">Nishant Singh</div>  
+      <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nishant Singh</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section_pic-continer">
+          <img src="./assests/profile-pic.png" alt="Nishant singh profile pic" />
+        </div>
+        <div class="section-text">
+          <p class="section_text_p1">Hello, I'm</p>
+          <h1 class="title">Nishant Singh</h1>
+          <p class="section_text_p2"><span id="element"></span></p>
+          <div class="btn-container">
+              <button class="btn btn-color-2" onclick="window.open('./assests/resume-example.pdf')">Download CV</button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+              <img src="./assests/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/nishant-singh-934241235/'">
+              <img src="./assests/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Nish22122003'">
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-continer">
+          <img src="./assests/picture.jpg" alt="Profile Picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+            <img src="./assests/experience.png" alt="Expereince icon" class="icon">
+            <h3>Experience</h3>
+            <p>2+ years <br/>Frontend Development & embedded System</p>
+            </div>
+            <div class="details-container">
+              <img src="./assests/education.png" alt="Education icon" class="icon">
+              <h3>Education</h3>
+              <p>B.Tech Electronics & Communication </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>I am Nishant Singh, hailing from Lucknow and currently pursuing my B.Tech in Electronics and Communication Engineering at VIT Vellore, where I am in my 4th year. As a dedicated student, I am passionate about blending hardware and software technologies to create innovative solutions. My academic journey has equipped me with a solid foundation in electronics, while my enthusiasm for coding has led me to develop proficiency in Java.<br>
+
+              Currently, I am expanding my skill set in the field of Machine Learning, exploring its vast potential to solve real-world problems. I thrive in collaborative environments where I can contribute to impactful projects and continuously learn from my peers and mentors.<br>
+              
+              I work on embedded systems and frontend development, and I have a foundational understanding of SQL. I am eager to apply my technical skills and problem-solving abilities to internships and projects that challenge me to think creatively and push the boundaries of technology. Let's connect and explore opportunities to drive technological advancements together</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Internet of Things</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>IoT Domain Analyst</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Cloud Practitioner</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>AI & ML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Electronics & Communication</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>VLSI Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Embedded System</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>MATLAB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>FPGA Design</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Coding</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Verilog</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Embedded C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assests/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <img src="./assests/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Project</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assests/predict.png" alt="project 1" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Car Price Predictor using ML</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nish22122003/Car-Price-Prediction'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+            
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assests/smart_plant_moitoring_model.jpg" alt="project 2" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Plant Monitoring System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nish22122003/Smart-Plant-monitoring-System'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+            
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assests/ota.webp" alt="project 3" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">OTA firmware Update</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nish22122003/OTA-firmware-update'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <img src="./assests/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assests/email.png" alt="Email icon" class="icon contact-icon">
+          <p><a href="mailto:nishantsingh.3607@gmail.com">nishantsingh.3607@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assests/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/nishant-singh-934241235/">linkedin</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nishant Singh. All Rights Reserved</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Electronics & comm engineer', 'frontend developer','Embedded Systems engineer','VLSI System Designer'],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
